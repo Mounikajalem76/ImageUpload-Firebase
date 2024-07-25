@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "280127205951",
+    "firebase_url": "https://signuploginrealtime-34b49-default-rtdb.firebaseio.com",
+    "project_id": "signuploginrealtime-34b49",
+    "storage_bucket": "signuploginrealtime-34b49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280127205951:android:970ba23918f83259a2fe8a",
+        "android_client_info": {
+          "package_name": "com.example.imageuploadonfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsS4UmwSGSge-8OjQ-VQCA5VqCGBdDsQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280127205951:android:e6755e2b2f095ea2a2fe8a",
+        "android_client_info": {
+          "package_name": "com.example.signuploginrealtime"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsS4UmwSGSge-8OjQ-VQCA5VqCGBdDsQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

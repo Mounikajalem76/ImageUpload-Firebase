@@ -30,7 +30,7 @@ import com.google.firebase.storage.UploadTask;
 
 public class MainActivity extends AppCompatActivity {
     ImageView imageView;
-    Button uploadbtn,showbtn;
+    Button uploadbtn;
     ProgressBar progressBar;
     DatabaseReference root= FirebaseDatabase.getInstance().getReference("Image");
     StorageReference reference= FirebaseStorage.getInstance().getReference();
@@ -43,10 +43,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         imageView=(ImageView) findViewById(R.id.imageview);
         uploadbtn=(Button) findViewById(R.id.upload);
-        showbtn=(Button) findViewById(R.id.show);
         progressBar=(ProgressBar) findViewById(R.id.progressbar);
 
         progressBar.setVisibility(View.INVISIBLE);
+
 
 
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -92,7 +92,9 @@ public class MainActivity extends AppCompatActivity {
                         model model1=new model(uri.toString());
                         String modelId= root.push().getKey();
                         root.child(modelId).setValue(model1);
+                        progressBar.setVisibility(View.INVISIBLE);
                         Toast.makeText(MainActivity.this, "Image Uploading Successfully", Toast.LENGTH_SHORT).show();
+                        imageView.setImageResource(R.drawable.baseline_cloud_upload_24);
 
                     }
                 });

@@ -27,11 +27,4 @@
       android:layout_marginTop="50dp"
       android:text="UploadImage"
       android:id="@+id/upload"/>
-   <Button
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="50dp"
-       android:text="ShowAll"
-       android:id="@+id/show"/>
-
 </LinearLayout>
